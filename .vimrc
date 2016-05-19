@@ -10,9 +10,7 @@ set autoindent
 set smartindent
 
 " Remove serch highlighting on leader-escape
-"noremap <esc> :noh<return><esc>
 noremap <Leader><Esc> :nohlsearch<Return>
-nnoremap vf /.<CR>?[\(\{\[]<CR>:noh<CR>v%
 
 " Normal mode enter inserts space
 noremap <Enter> o<Esc>k
