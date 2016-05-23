@@ -15,6 +15,9 @@ noremap <Leader><Esc> :nohlsearch<Return>
 " Normal mode enter inserts space
 noremap <Enter> o<Esc>k
 
+" Leader-n - Next buffer
+noremap <Leader>n :bnext<Enter>
+
 " Get rid of Ex mode
 map Q :q
 set viminfo='100
