@@ -18,6 +18,9 @@ noremap <Enter> o<Esc>k
 " Leader-n - Next buffer
 noremap <Leader>n :bnext<Enter>
 
+" F5 to switch buffers
+noremap <F5> :buffers<CR>:buffer<Space>
+
 " Get rid of Ex mode
 map Q :q
 set viminfo='100
