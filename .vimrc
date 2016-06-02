@@ -3,6 +3,8 @@ set number
 set numberwidth=4
 
 " Set tabs
+filetype indent on
+set softtabstop=4
 set tabstop=4
 set shiftwidth=4
 set expandtab
