@@ -1,3 +1,6 @@
+# .bashrc
+# use 'source ~/nix-configs/.bashrc' to source from ~/.bashrc
+
 echo -ne "\e]0;CX-TEST\a" 
 PS1="\u@\h \w: "
 export CDPATH='.:~:/opt/carsi'

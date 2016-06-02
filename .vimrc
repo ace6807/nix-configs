@@ -1,3 +1,8 @@
+" nix-configs/.vimrc
+" use 'source ~/nix-configs/.vimrc' to source from ~/.vimrc
+
+
+
 " Line Numbering
 set number
 set numberwidth=4

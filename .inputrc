@@ -1,3 +1,6 @@
+# nix-configs/.inputrc 
+# use '$include ~/nix-configs/.inputrc' to source from ~/.inputrc
+
 set completion-ignore-case on
 
 "\e[A": history-search-backward
