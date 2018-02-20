@@ -1,0 +1,59 @@
+diffwstage(){
+  vimdiff ./$1 scp://cx-stage//$PWD/$1
+}
+
+diffwtest(){
+  vimdiff ./$1 scp://cx-test//$PWD/$1
+}
+
+
+
+# OLD ---------------
+# Name, Prev#
+#smodiff(){
+#    TMPDIR=~/tmp
+#    prVersion=$(gmktemp /tmp/$1.$2.XXXXXXXX)
+#    co -p$2 $1 > $prVersion
+#    vimdiff $1 $prVersion
+#    rm -f $prVersion
+#}
+# ------------------
+
+# Name, V1#, V2#
+#vdiff(){
+#    TMPDIR=~/tmp
+#    v1=$(gmktemp /tmp/$1.$2.XXXXXXXX)
+#    v2=$(gmktemp /tmp/$1.$3.XXXXXXXX)
+#    co -p$2 $1 > $v1
+#    co -p$3 $1 > $v2
+#    vimdiff $v1 $v2
+#    rm -f $v1 $v2
+#}
+#
+#smodiff(){
+#    TMPDIR=~/tmp
+#    filename=$1
+#    baseversion=$2
+#    customversion=$3
+#
+#    base=$(gmktemp /tmp/$filename.$baseversion.XXXXXXXX)
+#    custom=$(gmktemp /tmp/$filename.$customversion.XXXXXXXX)
+#    trunk=$(gmktemp /tmp/$filename.XXXXXXXX)
+#
+#    co -p$baseversion $filename > $base
+#    co -p$customversion $filename > $custom
+#    #co -p $filename > $trunk
+#    cat $filename > $trunk
+#
+#    vimdiff $base $custom $trunk
+#
+#    rm -f $base $custom $trunk
+#}
+
+#rdiff(){
+#    filename=$1
+#    server=$2
+#
+#    vimdiff ./$filename scp://$server//$PWD//$filename
+#}
+

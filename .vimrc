@@ -1,10 +1,3 @@
-" nix-configs/.vimrc
-" use 'source ~/nix-configs/.vimrc' to source from ~/.vimrc
-
-" au BufNewFile,BufRead *.nout set filetype=diff
-" au BufNewFile,BufRead *.jout set filetype=diff
-
-
 " Line Numbering
 set number
 " set relativenumber
@@ -30,6 +23,7 @@ noremap <Enter> o<Esc>k
 
 " Leader-n - Next buffer
 noremap <Leader>n :bnext<Enter>
+noremap <Leader>p :bprev<Enter>
 
 " F5 to switch buffers
 noremap <F5> :buffers<CR>:buffer<Space>
@@ -41,12 +35,7 @@ noremap <F1> :e<Space><C-d>
 nnoremap <C-l> <C-w>l
 nnoremap <C-h> <C-w>h
 
-
 " Get rid of Ex mode
 map Q :q
 set viminfo='100
 " colorscheme slate
-
-let perl_fold = 1
-set foldlevelstart=1
-
