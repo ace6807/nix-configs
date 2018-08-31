@@ -1,1 +1,2 @@
-PS1='\n[\D{%Y-%m-%d}]$(__git_ps1 " [%s]") \w\n[\u.\h] ➤ '
+PS1='[\D{%Y-%m-%d}]\e[38;5;226m$(__git_ps1 " (%s)")\e[0m \e[38;5;32m\w\e[0m\n[\u.\h] \e[38;5;32m➤\e[0m '
+PROMPT_COMMAND="printf '\n'"

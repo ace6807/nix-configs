@@ -13,3 +13,7 @@ fi
 if [ -f ~/.cx_bash_functions ]; then
     source ~/.cx_bash_functions
 fi
+
+if [ -f ~/.customprompt ]; then
+    source ~/.customprompt
+fi
